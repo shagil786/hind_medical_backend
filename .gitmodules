@@ -1,0 +1,21 @@
+[submodule "hind-medical-api-gateway"]
+	path = hind-medical-api-gateway
+	url = git@github.com:shagil786/hind-medical-api-gateway.git
+[submodule "hind-medical-auth-service"]
+	path = hind-medical-auth-service
+	url = git@github.com:shagil786/hind-medical-auth-service.git
+[submodule "hind-medical-load-balancer"]
+	path = hind-medical-load-balancer
+	url = git@github.com:shagil786/hind-medical-load-balancer.git
+[submodule "hind-medical-notification-service"]
+	path = hind-medical-notification-service
+	url = git@github.com:shagil786/hind-medical-notification-service.git
+[submodule "hind-medical-order-service"]
+	path = hind-medical-order-service
+	url = git@github.com:shagil786/hind-medical-order-service.git
+[submodule "hind-medical-product-service"]
+	path = hind-medical-product-service
+	url = git@github.com:shagil786/hind-medical-product-service.git
+[submodule "hind-medical-user-service"]
+	path = hind-medical-user-service
+	url = git@github.com:shagil786/hind-medical-user-service.git

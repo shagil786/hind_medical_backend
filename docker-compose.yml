@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  haproxy:
+    image: haproxy:latest
+    volumes:
+      - ./hind-medical-load-balancer/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    ports:
+      - "80:80"
+    networks:
+      - mynetwork
+
+  krakend1:
+    image: devopsfaith/krakend
+    volumes:
+      - ./hind-medical-api-gateway/krakend.json:/etc/krakend/krakend.json:ro
+    networks:
+      - mynetwork
+
+  krakend2:
+    image: devopsfaith/krakend
+    volumes:
+      - ./hind-medical-api-gateway/krakend2.json:/etc/krakend/krakend.json:ro
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
